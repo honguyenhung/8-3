@@ -6,7 +6,7 @@ document.addEventListener('mousemove', (e) => {
 });
 
 // Typing effect for greeting
-const greetingText = "Cậu biết không? Với mình, cậu luôn là một người rất đặc biệt đối với mìn 💖";
+const greetingText = "Cậu biết không? Với mình, cậu luôn là một người rất đặc biệt =))) híhí , típ i rùi bíc 💖";
 const greetingElement = document.querySelector('.greeting');
 let charIndex = 0;
 
