@@ -17,14 +17,27 @@ body {
     padding: 2rem;
 }
 
+/* CUSTOM CURSOR (đã sửa) */
 .custom-cursor {
     width: 30px;
     height: 30px;
     position: fixed;
+    top: 0;
+    left: 0;
     pointer-events: none;
     z-index: 9999;
-    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
     transition: transform 0.1s;
+}
+
+/* trái tim ở giữa cursor */
+.custom-cursor::after{
+    content:"💗";
+    position:absolute;
+    font-size:20px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
 }
 
 .custom-cursor svg {
@@ -159,6 +172,7 @@ h1 {
     .reason-card { margin: 1rem; }
     .reason-text { font-size: 1rem; }
 }
+
 .shuffle-button {
     background: linear-gradient(45deg, #ff69b4, #ff99cc);
     border: none;
@@ -191,13 +205,4 @@ h1 {
     color: #ff69b4;
     margin-top: 1rem;
     opacity: 0.7;
-}
-/* thêm hiệu ứng trái tim cho cursor */
-.custom-cursor::after{
-    content:"💗";
-    position:absolute;
-    font-size:20px;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
 }
