@@ -13,12 +13,12 @@
     { 
         text: "Cảm ơn Yêu vì đã xuất hiện trong cuộc sống của mình, vì chỉ cần có Yêu hoii, những ngày bình thường cũng trở nên đặc biệt hơn , hí hí 🥰😘", 
         emoji: "💕",
-        gif: "gif1.gif"
+        gif: "gif3.gif"
     },
     { 
         text: "Mình mong rằng trong chặng đường phía trước, dù có chuyện gì xảy ra, mình vẫn có thể ở bên Yêu thật lâu, cùng Yêu đi qua thật nhiều năm tháng, cùng nhau tạo nên thật nhiều kỷ niệm đẹp nhóoo💝💖💗💌", 
         emoji: "💝",
-        gif: "gif2.gif"
+        gif: "gif4.gif"
     }
 ];
 
