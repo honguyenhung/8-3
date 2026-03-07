@@ -138,15 +138,10 @@ function createFloatingElement() {
 const cursor = document.querySelector(".custom-cursor");
 
 document.addEventListener("mousemove", (e) => {
-
-    if(cursor){   // tránh lỗi nếu chưa có cursor
-        gsap.to(cursor,{
-            x:e.clientX,
-            y:e.clientY,
-            duration:0.2
-        });
+    if(cursor){
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
     }
-
 });
 
 // Create initial floating elements
