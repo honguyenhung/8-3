@@ -1,8 +1,13 @@
 // Cursor following effect
-const cursor = document.querySelector('.cursor');
+const cursor = document.querySelector('.custom-cursor');
+
 document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
+
+    if(cursor){
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+    }
+
 });
 
 // Typing effect for greeting
