@@ -134,14 +134,19 @@ function createFloatingElement() {
     });
 }
 
-// Custom cursor (same as before)
-const cursor = document.querySelector('.custom-cursor');
-document.addEventListener('mousemove', (e) => {
-    gsap.to(cursor, {
-        x: e.clientX - 15,
-        y: e.clientY - 15,
-        duration: 0.2
-    });
+// Custom cursor
+const cursor = document.querySelector(".custom-cursor");
+
+document.addEventListener("mousemove", (e) => {
+
+    if(cursor){   // tránh lỗi nếu chưa có cursor
+        gsap.to(cursor,{
+            x:e.clientX,
+            y:e.clientY,
+            duration:0.2
+        });
+    }
+
 });
 
 // Create initial floating elements
